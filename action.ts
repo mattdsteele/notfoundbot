@@ -18,7 +18,7 @@ function message(msg: string) {
 
 (async function () {
   const ctx: LContext = {
-    contentDir: getInput("contentDir"),
+    contentDir: getInput("content-folder"),
     cwd: process.env.GITHUB_WORKSPACE || __dirname,
     toolkit,
     context,
