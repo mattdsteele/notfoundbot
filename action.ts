@@ -39,6 +39,7 @@ function message(msg: string) {
       archived: 0,
     },
   };
+  console.log(ctx);
   const cacheFilePath = ".notfoundbot-cache";
   try {
     await restoreCache([cacheFilePath], cacheKey, ["notfoundbot-v2-"]);
