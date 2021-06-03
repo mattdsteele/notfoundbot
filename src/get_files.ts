@@ -9,6 +9,7 @@ import type { LFile, LURLGroup, LContext } from "../types";
 
 function gatherFiles(ctx: LContext) {
   const { cwd } = ctx;
+  ctx.message(`Checking folder: ${ctx.contentDir}/*.md`);
   const files = glob
     .sync(`${ctx.contentDir}/*.md`, {
       cwd,
